@@ -1,0 +1,43 @@
+@import 'transitions';
+@import 'font';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: 'Pinopolis', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.38;
+}
+
+a {
+  color: #52ffc4;
+  text-decoration: none;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: white;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.38;
+  letter-spacing: -0.02em;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

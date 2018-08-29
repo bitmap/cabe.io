@@ -1,0 +1,31 @@
+[{
+    "title": "cambro",
+    "desc": "Map webcam image data over websockets to whatever.",
+    "img": "static/img/gifs/cambro.gif",
+    "url": "https://github.com/bitmap/cambro"
+  },
+  {
+    "title": "better together",
+    "desc": "Design Week Portland 2017",
+    "img": "static/img/gifs/dwp.gif",
+    "url": "https://cincodesign.com/news/dwp-2017-better-together"
+  },
+  {
+    "title": "doodl",
+    "desc": "Canvas drawing app. Basically Snapchat.",
+    "img": "static/img/gifs/dudel.gif",
+    "url": "https://bitmap.github.io/doodl"
+  },
+  {
+    "title": "schmear.js",
+    "desc": "Relive your nightmares, follow your dreams",
+    "img": "static/img/gifs/schmear.gif",
+    "url": "https://github.com/bitmap/schmear.js"
+  },
+  {
+    "title": "pxlfxr",
+    "desc": "Video/Audio to Canvas pixel manipulator",
+    "img": "static/img/gifs/pxlfxr.gif",
+    "url": "https://bitmap.github.io/pxlfxr"
+  }
+]

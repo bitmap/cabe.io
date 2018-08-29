@@ -1,0 +1,7 @@
+[
+  { "title": "stay proud", "img": "static/img/logos/stay-proud.svg" , "url": "https://pride.b-reel.com"},
+  { "title": "the james brand", "img": "static/img/logos/tjb.svg", "url": "https://thejamesbrand.com" },
+  { "title": "cinco design", "img": "static/img/logos/cinco.svg", "url": "https://cincodesign.com" },
+  { "title": "boa", "img": "static/img/logos/boa.svg", "url": "https://boafit.com/" },
+  { "title": "stellar", "img": "static/img/logos/stellar.svg", "url": "https://stellar.aero/" }
+]
