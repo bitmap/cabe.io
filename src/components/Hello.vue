@@ -32,7 +32,7 @@ export default {
         const text = document.querySelector('.splash_text')
         const w = text.clientWidth
         const h = text.clientHeight
-        const x = ((event.clientX - window.innerWidth / 2) - (w * 2) / window.innerWidth) / 105 - 50
+        const x = ((event.clientX - window.innerWidth / 2) - (w * 2) / window.innerWidth) / 100 - 50
         const y = ((event.clientY - window.innerHeight / 2) - (h * 2) / window.innerHeight) / 25 - 50
         text.style.transform = `translate(${x}%, ${y}%)`
       }
@@ -114,8 +114,11 @@ main {
   user-select: none;
   pointer-events: none;
   overflow: hidden;
-  -webkit-filter: url("#doink");
-  filter: url("#doink");
+
+  .chrome & {
+    -webkit-filter: url("#doink");
+    filter: url("#doink");
+  }
 
   @media screen and (max-width: 720px) {
     height: calc(100vh - 44px);

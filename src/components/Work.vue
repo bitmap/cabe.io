@@ -136,12 +136,15 @@ ul {
 }
 
 .header {
-  -webkit-filter: url("#doink");
-  filter: url("#doink");
   color: #52ffc4;
   font-size: 4rem;
   text-transform: uppercase;
   margin: 0;
+
+  .chrome & {
+    -webkit-filter: url("#doink");
+    filter: url("#doink");
+  }
 
   div { transition: 800ms ease-out; }
 

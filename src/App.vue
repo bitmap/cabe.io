@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="{chrome: isChrome}" >
     <transition :name="this.$root.$data.transition">
       <router-view></router-view>
     </transition>
@@ -10,7 +10,12 @@
 import * as inobounce from 'inobounce'; // eslint-disable-line
 
 export default {
-  name: 'App'
+  name: 'App',
+  data: function() {
+    return {
+      isChrome: !!window.chrome && !!window.chrome.webstore
+    }
+  }
 }
 </script>
 
