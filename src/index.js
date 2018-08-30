@@ -1,7 +1,21 @@
 import Vue from 'vue'
+import VueAnalytics from 'vue-analytics'
 import App from './App.vue'
 import router from './router'
 import './styles/index.scss'
+
+Vue.config.productionTip = false
+
+const isProduction = process.env.NODE_ENV === 'production'
+
+Vue.use(VueAnalytics, {
+  id: 'UA-124885068-1',
+  router,
+  debug: {
+    enabled: !isProduction,
+    sendHitTask: isProduction
+  }
+})
 
 const warp = {
   paused: false,

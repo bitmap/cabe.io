@@ -25,7 +25,7 @@ export default {
       this.$root.$data.texture.load('static/img/warp.png', t => {
         this.init(t)
         this.animate()
-        this.$refs.scene.classList.add('init')
+        this.$refs.scene.classList.add('warp')
         this.$refs.scene.appendChild(this.$root.$data.warp.renderer.domElement)
       })
     } else {
@@ -155,7 +155,7 @@ div {
   width: 100%;
   height: 100%;
 
-  &.init {
+  &.warp {
     animation: fadeIn 10s ease;
   }
 }
