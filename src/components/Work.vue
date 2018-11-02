@@ -3,7 +3,7 @@
     <Doink />
     <section>
 
-      <h2 class="header header-left"><div>Websites</div></h2>
+      <h2 class="header header-left"><div>Internet</div></h2>
       <ul class="sites">
         <li class="site" v-for="site in sites" :key="site.title">
           <a @click="track" :href="site.url" target="_blank">
@@ -159,7 +159,6 @@ ul {
     text-align: right;
     transform: rotate(15deg) translateY(1em);
     transform-origin: 100% 100%;
-    position: relative;
   }
 
   &-tilt {
@@ -193,12 +192,14 @@ ul {
 .sites {
   align-items: center;
   justify-content: center;
-  padding-left: 4rem;
+  padding-left: 0;
   margin-bottom: 4rem;
+  display: flex;
+  flex-flow: row wrap;
 
   .site {
-    width: (100% / 3);
-    height: 10rem;
+    flex-basis: (100% / 3);
+    height: 16rem;
     display: flex;
     transition: 250ms;
     padding: 0;
@@ -212,8 +213,9 @@ ul {
   }
 
   img {
-    width: 16rem;
-    max-width: 80%;
+    width: 24rem;
+    max-width: 320px;
+    max-width: 240px;
     display: block;
     margin: auto;
   }
@@ -226,7 +228,7 @@ ul {
     padding-left: 0;
 
     .site {
-      width: 100%;
+      flex-basis: 100%;
     }
   }
 }

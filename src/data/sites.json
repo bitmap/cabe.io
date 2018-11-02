@@ -1,7 +1,44 @@
 [
-  { "title": "stay proud", "img": "static/img/logos/stay-proud.svg" , "url": "https://pride.b-reel.com"},
-  { "title": "the james brand", "img": "static/img/logos/tjb.svg", "url": "https://thejamesbrand.com" },
-  { "title": "cinco design", "img": "static/img/logos/cinco.svg", "url": "https://cincodesign.com" },
-  { "title": "boa", "img": "static/img/logos/boa.svg", "url": "https://boafit.com/" },
-  { "title": "stellar", "img": "static/img/logos/stellar.svg", "url": "https://stellar.aero/" }
+  {
+    "title": "cuup",
+    "img": "static/img/logos/cuup.svg",
+    "url": "https://shopcuup.com",
+    "date": "November 2018",
+    "media": null
+  },
+  {
+    "title": "david-webb",
+    "img": "static/img/logos/david-webb.svg",
+    "url": "https://davidwebb.com",
+    "date": "October 2018",
+    "media": null
+  },
+  {
+    "title": "stay proud",
+    "img": "static/img/logos/stay-proud.svg",
+    "url": "https://pride.b-reel.com",
+    "date": "June 2018",
+    "media": null
+  },
+  {
+    "title": "the james brand",
+    "img": "static/img/logos/tjb.svg",
+    "url": "https://thejamesbrand.com",
+    "date": "September 2017",
+    "media": null
+  },
+  {
+    "title": "boa",
+    "img": "static/img/logos/boa.svg",
+    "url": "https://boafit.com/",
+    "date": "January 2017",
+    "media": null
+  },
+  {
+    "title": "cinco design",
+    "img": "static/img/logos/cinco.svg",
+    "url": "https://cincodesign.com",
+    "date": "May 2016",
+    "media": null
+  }
 ]

@@ -1,4 +1,5 @@
-[{
+[
+  {
     "title": "cambro",
     "desc": "Map webcam image data over websockets to whatever.",
     "img": "static/img/gifs/cambro.gif",

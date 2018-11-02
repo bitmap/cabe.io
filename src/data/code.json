@@ -1,10 +1,42 @@
 [
-  { "title": "gitlab-cmd", "desc": "Command-line interface for GitLab project issues and merge requests.", "url" : "https://github.com/bitmap/gitlab-cmd" },
-  { "title": "based.css", "desc": "Bootstrap without the straps.", "url" : "https://github.com/bitmap/based.css" },
-  { "title": "uno", "desc": "Gulp-based static site generator.", "url" : "https://github.com/bitmap/uno" },
-  { "title": "uno-cli", "desc": "Spin up uno projects from the command-line.", "url" : "https://github.com/bitmap/uno-cli" },
-  { "title": "bokeh.js", "desc": "Carousel gallery with a little blur.",  "url" : "https://github.com/bitmap/bokeh"},
-  { "title": "cla$$y.js", "desc": "Micro-library wrapping querySelector and addEventListener.",  "url" : "https://github.com/bitmap/classy"},
-  { "title": "updog", "desc": "Node.js image uploader.", "url" : "https://github.com/bitmap/updog" },
-  { "title": "...more", "desc": "There's some other shit over here.", "url" : "https://github.com/bitmap" }
+  {
+    "title": "gitlab-cmd",
+    "desc": "Command-line interface for GitLab project issues and merge requests.",
+    "url": "https://github.com/bitmap/gitlab-cmd"
+  },
+  {
+    "title": "based.css",
+    "desc": "Bootstrap without the straps.",
+    "url": "https://github.com/bitmap/based.css"
+  },
+  {
+    "title": "uno",
+    "desc": "Gulp-based static site generator.",
+    "url": "https://github.com/bitmap/uno"
+  },
+  {
+    "title": "uno-cli",
+    "desc": "Spin up uno projects from the command-line.",
+    "url": "https://github.com/bitmap/uno-cli"
+  },
+  {
+    "title": "bokeh.js",
+    "desc": "Carousel gallery with a little blur.",
+    "url": "https://github.com/bitmap/bokeh"
+  },
+  {
+    "title": "cla$$y.js",
+    "desc": "Micro-library wrapping querySelector and addEventListener.",
+    "url": "https://github.com/bitmap/classy"
+  },
+  {
+    "title": "updog",
+    "desc": "Node.js image uploader.",
+    "url": "https://github.com/bitmap/updog"
+  },
+  {
+    "title": "...more",
+    "desc": "There's some other shit over here.",
+    "url": "https://github.com/bitmap"
+  }
 ]
