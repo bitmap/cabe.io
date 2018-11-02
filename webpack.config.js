@@ -7,15 +7,16 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
-const DEV_SERVER = process.env.WEBPACK_SERVE
+const mode = process.env.NODE_ENV
 
 module.exports = {
-  mode: DEV_SERVER ? 'development' : 'production',
-  serve: {
+  mode,
+
+  devServer: {
     port: 1337,
-    open: {
-      app: 'Google Chrome',
-    }
+    open: 'Google Chrome',
+    historyApiFallback: true,
+    overlay: true
   },
 
   module: {
@@ -53,7 +54,7 @@ module.exports = {
 
   resolve: {
     alias: {
-      vue: DEV_SERVER ? 'vue/dist/vue.js' : 'vue/dist/vue.min.js',
+      vue: mode === 'development' ? 'vue/dist/vue.js' : 'vue/dist/vue.min.js',
       styles: resolve('src/styles/'),
       components: resolve('src/components/')
     }
