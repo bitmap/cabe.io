@@ -13,7 +13,7 @@ export default {
   name: 'App',
   data: function() {
     return {
-      isChrome: !!window.chrome && !!window.chrome.webstore
+      isChrome: !!window.chrome
     }
   }
 }
