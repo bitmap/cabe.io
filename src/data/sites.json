@@ -1,5 +1,19 @@
 [
   {
+    "title": "thief and heist",
+    "img": "static/img/logos/thmask.svg",
+    "url": "https://thiefandheist.co",
+    "date": "February 2019",
+    "media": null
+  },
+  {
+    "title": "something new",
+    "img": "static/img/logos/stnew.svg",
+    "url": "https://somethingnew.co",
+    "date": "February 2019",
+    "media": null
+  },
+  {
     "title": "cuup",
     "img": "static/img/logos/cuup.svg",
     "url": "https://shopcuup.com",

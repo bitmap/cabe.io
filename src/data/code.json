@@ -1,7 +1,12 @@
 [
   {
+    "title": "react-hook-inview",
+    "desc": "React Hook for detecting when an element is in the viewport",
+    "url": "https://www.npmjs.com/package/react-hook-inview"
+  },
+  {
     "title": "gitlab-cmd",
-    "desc": "Command-line interface for GitLab project issues and merge requests.",
+    "desc": "CLI for GitLab project issues and merge requests.",
     "url": "https://github.com/bitmap/gitlab-cmd"
   },
   {
@@ -20,14 +25,9 @@
     "url": "https://github.com/bitmap/uno-cli"
   },
   {
-    "title": "bokeh.js",
-    "desc": "Carousel gallery with a little blur.",
-    "url": "https://github.com/bitmap/bokeh"
-  },
-  {
-    "title": "cla$$y.js",
-    "desc": "Micro-library wrapping querySelector and addEventListener.",
-    "url": "https://github.com/bitmap/classy"
+    "title": "New Money 💰",
+    "desc": "Micro-library for querying DOM and manipulating classNames / events",
+    "url": "https://www.npmjs.com/package/new-money"
   },
   {
     "title": "updog",
