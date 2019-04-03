@@ -1,9 +1,16 @@
 [
   {
+    "title": "meister",
+    "img": "static/img/logos/meister.svg",
+    "url": "https://meister.tv",
+    "date": "April 2019",
+    "media": null
+  },
+  {
     "title": "thief and heist",
     "img": "static/img/logos/thmask.svg",
     "url": "https://thiefandheist.co",
-    "date": "February 2019",
+    "date": "April 2019",
     "media": null
   },
   {
