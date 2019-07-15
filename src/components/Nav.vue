@@ -18,10 +18,10 @@
 <script>
 export default {
   methods: {
-    transition: function(dir) {
+    transition(dir) {
       this.$root.transitionDir(dir)
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -74,25 +74,26 @@ export default {
     transition: 0.7s ease;
     line-height: 1;
 
-    @media screen and (max-width: 720px) {
-      font-size: 1.5rem;
-    }
-
-    &:hover a span {
-      transform: translateY(-2vh);
-      color: #52ffc4;
-    }
-
-    &:nth-of-type(2) {
-      top: auto;
-      bottom: 0;
-
+    @media screen and (min-width: 720px) {
       &:hover a span {
-        transform: translateY(2vh);
+        transform: translateY(-2vh);
         color: #52ffc4;
       }
+
+      &:nth-of-type(2) {
+        top: auto;
+        bottom: 0;
+
+        &:hover a span {
+          transform: translateY(2vh);
+          color: #52ffc4;
+        }
+      }
+    }
+
+    @media screen and (max-width: 720px) {
+      font-size: 1.5rem;
     }
   }
 }
 </style>
-

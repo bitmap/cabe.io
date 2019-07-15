@@ -21,10 +21,10 @@ export default {
   components: {
     Nav, // eslint-disable-line
     Warp,
-    Doink
+    Doink,
   },
 
-  data: function() { return { tick: 0 }},
+  data() { return { tick: 0 }},
 
   methods: {
     follow(event) {
@@ -61,7 +61,7 @@ export default {
         span.classList.add('phase')
         span.style.transitionDelay = ''
 
-        setTimeout(function() {
+        setTimeout(() => {
           span.classList.remove('phase')
         }, 1000)
       }
@@ -81,10 +81,10 @@ export default {
           animate(spans[i], i)
         }, 100)
       }
-    }
+    },
   },
 
-  mounted: function() {
+  mounted() {
     const spans = this.split(this.$el)
     this.hover(spans)
 
@@ -92,7 +92,7 @@ export default {
       this.intro(spans)
       this.$root.$data.loaded = true
     }
-  }
+  },
 }
 </script>
 

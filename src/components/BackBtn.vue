@@ -9,10 +9,10 @@
 export default {
   props: ['transitionDirection', 'url', 'position'],
   methods: {
-    transition: function(dir) {
+    transition(dir) {
       this.$root.transitionDir(dir)
-    }
-  }
+    },
+  },
 }
 </script>
 

@@ -11,11 +11,11 @@ import * as inobounce from 'inobounce'; // eslint-disable-line
 
 export default {
   name: 'App',
-  data: function() {
+  data() {
     return {
-      isChrome: !!window.chrome
+      isChrome: !!window.chrome,
     }
-  }
+  },
 }
 </script>
 

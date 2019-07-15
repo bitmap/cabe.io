@@ -47,15 +47,15 @@ import Doink from 'components/Doink.vue'
 import { sites, projects, codes } from '../data'
 
 export default {
-  data: function() {
+  data() {
     return { sites, projects, codes, tick: 0 }
   },
   components: { BackBtn, Doink },
-  mounted: function() {
+  mounted() {
     this.$root.$data.transition = 'down'
   },
   methods: {
-    transition: function(dir) {
+    transition(dir) {
       this.$root.transitionDir(dir)
     },
 
@@ -72,7 +72,7 @@ export default {
           const w = text.clientWidth
           const h = text.clientHeight
           let x = ((event.clientX - window.innerWidth / 2) - (w * 2) / window.innerWidth) / 100
-          let y = ((event.clientY - window.innerHeight / 2) - (h * 2) / window.innerHeight) / 50
+          const y = ((event.clientY - window.innerHeight / 2) - (h * 2) / window.innerHeight) / 50
 
           if (i % 2) {
             x = -((event.clientX - window.innerWidth / 2) - (w * 2) / window.innerWidth) / 100
@@ -87,7 +87,7 @@ export default {
 
       this.tick += 1
     },
-  }
+  },
 }
 </script>
 

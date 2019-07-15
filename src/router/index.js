@@ -10,15 +10,15 @@ export default new VueRouter({
   mode: 'history',
   routes: [{
     path: '/',
-    component: Hello
+    component: Hello,
   },
   {
     path: '/work',
-    component: Work
+    component: Work,
   },
   {
     path: '/about',
-    component: About
-  }
-  ]
+    component: About,
+  },
+  ],
 })

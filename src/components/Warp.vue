@@ -14,12 +14,12 @@ import {
   BoxGeometry,
   NearestFilter,
   DoubleSide,
-  TextureLoader
+  TextureLoader,
 } from 'three'
 
 export default {
 
-  mounted: function() {
+  mounted() {
     if (!this.$root.$data.loaded) {
       this.$root.$data.texture = new TextureLoader()
       this.$root.$data.texture.load('static/img/warp.png', t => {
@@ -35,7 +35,7 @@ export default {
     this.$root.$data.warp.paused = false
   },
   methods: {
-    init: function(texture) {
+    init(texture) {
       const { warp } = this.$root.$data
 
       warp.camera = new OrthographicCamera(
@@ -62,7 +62,7 @@ export default {
       warp.scene.add(warp.cubeMesh)
 
       warp.renderer = new WebGLRenderer({
-        antialias: false
+        antialias: false,
       })
 
       warp.renderer.setPixelRatio(window.devicePixelRatio)
@@ -83,7 +83,7 @@ export default {
         // color: 5439428,
         envMap: warp.cubeCam2.renderTarget.texture,
         side: DoubleSide,
-        opacity: 0.5
+        opacity: 0.5,
       })
 
       const geometry = new BoxGeometry(1024, 1024, 1024)
@@ -100,18 +100,18 @@ export default {
       window.addEventListener('resize', this.resize, false)
     },
 
-    resize: function() {
-      const warp = this.$root.$data.warp
+    resize() {
+      const { warp } = this.$root.$data
 
       warp.renderer.setSize(window.innerWidth, window.innerHeight)
       warp.camera.aspect = window.innerWidth / window.innerHeight
       warp.camera.updateProjectionMatrix()
     },
 
-    animate: function() {
+    animate() {
       requestAnimationFrame(this.animate)
 
-      const warp = this.$root.$data.warp
+      const { warp } = this.$root.$data
 
       if (!warp.paused) {
         warp.cube1.rotation.x += 0.002
@@ -139,7 +139,7 @@ export default {
       }
 
       warp.renderer.render(warp.scene, warp.camera)
-    }
+    },
   },
 }
 </script>
@@ -160,4 +160,3 @@ div {
   }
 }
 </style>
-

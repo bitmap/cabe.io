@@ -24,17 +24,17 @@ import { about } from '../data'
 
 export default {
   components: { BackBtn },
-  data: function() {
+  data() {
     return { about }
   },
-  mounted: function() {
+  mounted() {
     this.$root.$data.transition = 'up'
   },
   methods: {
     track(event) {
       this.$ga.event('About Link', 'click', event.currentTarget.href)
     },
-  }
+  },
 }
 </script>
 
@@ -53,5 +53,4 @@ p {
 @media screen and (min-width: $width) {
   .br { display: block; }
 }
-
 </style>

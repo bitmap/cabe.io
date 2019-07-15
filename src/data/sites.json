@@ -1,5 +1,12 @@
 [
   {
+    "title": "trialspark",
+    "img": "static/img/logos/trialspark.svg",
+    "url": "https://trialspark.com",
+    "date": "July 2019",
+    "media": null
+  },
+  {
     "title": "meister",
     "img": "static/img/logos/meister.svg",
     "url": "https://meister.tv",

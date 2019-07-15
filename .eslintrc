@@ -6,6 +6,7 @@
   },
   "extends": [
     "eslint:recommended",
+    "@cabe",
     "plugin:vue/essential"
   ],
   "rules": {

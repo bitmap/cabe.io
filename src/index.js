@@ -13,8 +13,8 @@ Vue.use(VueAnalytics, {
   router,
   debug: {
     enabled: !isProduction,
-    sendHitTask: isProduction
-  }
+    sendHitTask: isProduction,
+  },
 })
 
 const warp = {
@@ -36,15 +36,15 @@ const warp = {
 const data = {
   transition: '',
   loaded: false,
-  warp
+  warp,
 }
 
 const transition = {
   methods: {
-    transitionDir: function (dir) {
+    transitionDir(dir) {
       this.$root.$data.transition = dir
-    }
-  }
+    },
+  },
 }
 
 new Vue({
