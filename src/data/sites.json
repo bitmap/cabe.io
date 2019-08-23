@@ -1,5 +1,12 @@
 [
   {
+    "title": "spotify",
+    "img": "static/img/logos/spotify-ad-studio.svg",
+    "url": "https://adstudio.spotify.com/",
+    "date": "July 2019",
+    "media": null
+  },
+  {
     "title": "trialspark",
     "img": "static/img/logos/trialspark.svg",
     "url": "https://trialspark.com",
@@ -15,7 +22,7 @@
   },
   {
     "title": "thief and heist",
-    "img": "static/img/logos/thmask.svg",
+    "img": "static/img/logos/thiefxheist.svg",
     "url": "https://thiefandheist.co",
     "date": "April 2019",
     "media": null
@@ -53,20 +60,6 @@
     "img": "static/img/logos/tjb.svg",
     "url": "https://thejamesbrand.com",
     "date": "September 2017",
-    "media": null
-  },
-  {
-    "title": "boa",
-    "img": "static/img/logos/boa.svg",
-    "url": "https://boafit.com/",
-    "date": "January 2017",
-    "media": null
-  },
-  {
-    "title": "cinco design",
-    "img": "static/img/logos/cinco.svg",
-    "url": "https://cincodesign.com",
-    "date": "May 2016",
     "media": null
   }
 ]

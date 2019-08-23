@@ -34,7 +34,7 @@ const warp = {
 }
 
 const data = {
-  transition: '',
+  transition: 'down',
   loaded: false,
   warp,
 }

@@ -5,38 +5,38 @@
     "url": "https://www.npmjs.com/package/react-hook-inview"
   },
   {
+    "title": "styled-type",
+    "desc": "Responsive typography system for styled-components",
+    "url": "https://www.npmjs.com/package/styled-type"
+  },
+  {
+    "title": "react-hook-scrolltop",
+    "desc": "React Hook for detecting when a user is scrolled to the top of the page",
+    "url": "https://www.npmjs.com/package/react-hook-scrolltop"
+  },
+  {
     "title": "gitlab-cmd",
-    "desc": "CLI for GitLab project issues and merge requests.",
+    "desc": "CLI for GitLab project issues and merge requests",
     "url": "https://github.com/bitmap/gitlab-cmd"
   },
   {
     "title": "based.css",
-    "desc": "Bootstrap without the straps.",
+    "desc": "Bootstrap without the straps",
     "url": "https://github.com/bitmap/based.css"
   },
   {
     "title": "uno",
-    "desc": "Gulp-based static site generator.",
+    "desc": "Gulp-based static site generator",
     "url": "https://github.com/bitmap/uno"
   },
   {
-    "title": "uno-cli",
-    "desc": "Spin up uno projects from the command-line.",
-    "url": "https://github.com/bitmap/uno-cli"
-  },
-  {
-    "title": "New Money 💰",
+    "title": "new-money",
     "desc": "Micro-library for querying DOM and manipulating classNames / events",
     "url": "https://www.npmjs.com/package/new-money"
   },
   {
-    "title": "updog",
-    "desc": "Node.js image uploader.",
-    "url": "https://github.com/bitmap/updog"
-  },
-  {
     "title": "...more",
-    "desc": "There's some other shit over here.",
+    "desc": "There's some other shit over here",
     "url": "https://github.com/bitmap"
   }
 ]

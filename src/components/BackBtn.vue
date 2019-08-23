@@ -20,24 +20,43 @@ export default {
 a {
   display: flex;
   left: 0;
-  height: 50vh;
+  height: 25vh;
   line-height: 25vh;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0 auto;
   width: 100%;
   position: relative;
   color: white;
   transition: none;
+  overflow: hidden;
 
   &::after {
+    position: absolute;
+    top: 0;
     display: block;
-    margin: 4rem auto;
+    margin: 0 auto;
     transition: 0.7s ease;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::before {
+    font-size: 1.2rem;
+    font-weight: bold;
+    content: "BACK";
+    opacity: 0;
+    transition: 0.7s ease;
+    margin: auto;
   }
 
   &:hover::after {
     color: #52ffc4;
+  }
+
+  &:hover::before {
+    color: #52ffc4;
+    opacity: 1;
   }
 
   &.bottom {
@@ -46,19 +65,17 @@ a {
     }
 
     &:hover::after {
-      transform: translateY(2vh);
+      transform: translate(-50%, 2rem);
     }
   }
 
   &.top {
-    height: 25vh;
-
     &::after {
       content: "\2191";
     }
 
     &:hover::after {
-      transform: translateY(-2vh);
+      transform: translate(-50%, -2rem);
     }
   }
 }

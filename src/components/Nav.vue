@@ -2,12 +2,12 @@
   <nav class="nav">
     <ul>
       <li>
-        <router-link to="/work" @click.native="transition('up')">
+        <router-link to="/work" @click="transition('up')">
           <span>Select Work</span>
         </router-link>
       </li>
       <li>
-        <router-link to="/about" @click.native="transition('down')">
+        <router-link to="/about" @click="transition('down')">
           <span>About</span>
         </router-link>
       </li>
@@ -16,10 +16,11 @@
 </template>
 
 <script>
+import { setTimeout } from 'timers'
 export default {
   methods: {
     transition(dir) {
-      this.$root.transitionDir(dir)
+      setTimeout(() => this.$root.transitionDir(dir), 0)
     },
   },
 }
@@ -28,6 +29,8 @@ export default {
 <style scoped lang="scss">
 .nav {
   font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
   position: fixed;
   top: 0;
   left: 0;

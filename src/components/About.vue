@@ -2,18 +2,21 @@
   <div class="container">
     <section>
       <BackBtn url="/" transition-direction="up" position="top" />
-      <p>Senior Developer / Designer based in NYC.</p>
+      <h1>Cabe Branson is a Developer &amp; Designer based in New York.</h1>
       <p>
-        <span class="br">Currently <a :href="about.wnw" @click="track" target="_blank">Working</a> @ <a href="https://somethingnew.co" @click="track" target="_blank">Something New</a>.</span>
+        <span class="br">Currently <a :href="about.wnw" @click="track" target="_blank">working</a> @ <a href="https://somethingnew.co" @click="track" target="_blank">Something New</a>.</span>
         Formerly @ <a href="https://cincodesign.com" @click="track" target="_blank">Cinco</a> &amp; <a href="https://b-reel.com" @click="track" target="_blank">B-Reel</a>.
       </p>
-      <p>Specializing in JavaScript, Node, React, Next.js, Vue.js, Canvas, WebGL, Three.js, weird CSS, <router-link to="work">etc</router-link>.</p>
       <p>
-        <span class="br">Check out my <a :href="about.resume" @click="track" target="_blank">résumé</a> or <a :href="about.linkedIn" @click="track" target="_blank">LinkedIn</a>,</span>
-        <span class="br">code on <a :href="about.github" @click="track" target="_blank">GitHub</a>/<a :href="about.gitlab" @click="track" target="_blank">GitLab</a> &amp; <a :href="about.npm" @click="track" target="_blank">npm</a>,</span>
-        or contact me by <a @click="track" :href="about.email">email</a> or <a @click="track" :href="about.phone">phone</a>.
+        <span class="br">Check out my <a :href="about.resume" @click="track" target="_blank">resume</a>,</span>
+        <span>connect on <a :href="about.linkedIn" @click="track" target="_blank">linkedin</a>,</span>
+        <span class="br">see my code on <a :href="about.github" @click="track" target="_blank">github</a> &amp; <a :href="about.npm" @click="track" target="_blank">npm</a>,</span>
+        <span><a @click="track" :href="about.email">email me</a></span>
+        <span>or <a @click="track" :href="about.phone">call me</a>.</span>
       </p>
-      <p>✌️</p>
+      <h3>Stack</h3>
+      <p>JavaScript, TypeScript, Node, React, Next, Vue, Canvas, WebGL, Three.js, weird CSS, <router-link to="work">etc</router-link>.</p>
+
     </section>
   </div>
 </template>
@@ -43,6 +46,21 @@ $width: 640px;
 
 section {
   max-width: $width;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 0 0 0;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 3rem 0 0;
 }
 
 p {
