@@ -160,21 +160,9 @@ ul {
   @media screen and (max-width: 720px) {
     font-size: 3rem;
     -webkit-filter: none;
-    filter: none;
-
-    &-left {
-      padding-left: 2rem;
-    }
-
-    &-right {
-      padding-left: 0;
-      transform: rotate(10deg) translateX(-2rem) translateY(0);
-    }
-
-    &-tilt {
-      text-align: left;
-      transform: rotate(8deg) translate(0, -1rem);
-    }
+    transform: rotate(90deg) translate(0%, -25%);
+    z-index: 100;
+    color: #52ffc4;
   }
 }
 
@@ -214,6 +202,10 @@ ul {
 
   @media screen and (max-width: 720px) {
     padding-left: 0;
+
+    a {
+      margin: auto;
+    }
 
     .site {
       flex-basis: 100%;

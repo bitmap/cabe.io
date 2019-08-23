@@ -77,6 +77,11 @@ export default {
     transition: 0.7s ease;
     line-height: 1;
 
+    &:nth-of-type(2) {
+      top: auto;
+      bottom: 0;
+    }
+
     @media screen and (min-width: 720px) {
       &:hover a span {
         transform: translateY(-2vh);

@@ -45,38 +45,48 @@ a {
     font-size: 1.2rem;
     font-weight: bold;
     content: "BACK";
-    opacity: 0;
-    transition: 0.7s ease;
     margin: auto;
+
+    @media (min-width: 768px) {
+      opacity: 0;
+      transition: 0.7s ease;
+    }
   }
 
-  &:hover::after {
-    color: #52ffc4;
-  }
+  @media (min-width: 768px) {
+    &:hover::after {
+      color: #52ffc4;
+    }
 
-  &:hover::before {
-    color: #52ffc4;
-    opacity: 1;
+    &:hover::before {
+      color: #52ffc4;
+      opacity: 1;
+    }
   }
 
   &.bottom {
-    &::after {
-      content: "\2193";
-    }
+    @media (min-width: 768px) {
+      &::after {
+        content: "\2193";
+      }
 
-    &:hover::after {
-      transform: translate(-50%, 2rem);
+      &:hover::after {
+        transform: translate(-50%, 2rem);
+      }
     }
   }
 
   &.top {
-    &::after {
-      content: "\2191";
+    @media (min-width: 768px) {
+      &::after {
+        content: "\2191";
+      }
+
+      &:hover::after {
+        transform: translate(-50%, -2rem);
+      }
     }
 
-    &:hover::after {
-      transform: translate(-50%, -2rem);
-    }
   }
 }
 </style>
