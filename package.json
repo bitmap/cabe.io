@@ -11,6 +11,7 @@
   },
   "author": "Cabe Branson",
   "devDependencies": {
+<<<<<<< HEAD
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "autoprefixer": "^9.6.1",
@@ -43,5 +44,39 @@
   "dependencies": {
     "@cabe/eslint-config": "^1.0.4",
     "inobounce": "^0.2.0"
+=======
+    "@babel/core": "7.5.4",
+    "@babel/preset-env": "7.5.4",
+    "autoprefixer": "9.6.1",
+    "babel-loader": "8.0.6",
+    "copy-webpack-plugin": "5.0.3",
+    "css-loader": "3.0.0",
+    "css-mqpacker": "7.0.0",
+    "eslint": "6.0.1",
+    "eslint-plugin-vue": "5.2.3",
+    "html-webpack-plugin": "3.2.0",
+    "node-sass": "4.12.0",
+    "postcss-loader": "3.0.0",
+    "sass-loader": "7.1.0",
+    "stylelint": "10.1.0",
+    "stylelint-config-standard": "18.3.0",
+    "stylelint-processor-html": "1.0.0",
+    "stylelint-scss": "3.9.1",
+    "three": "0.106.2",
+    "url-loader": "2.0.1",
+    "vue": "2.6.10",
+    "vue-analytics": "5.17.0",
+    "vue-loader": "15.7.0",
+    "vue-router": "3.0.7",
+    "vue-style-loader": "4.1.2",
+    "vue-template-compiler": "2.6.10",
+    "webpack": "4.35.3",
+    "webpack-cli": "3.3.6",
+    "webpack-dev-server": "3.7.2"
+  },
+  "dependencies": {
+    "@cabe/eslint-config": "0.1.0",
+    "inobounce": "0.2.0"
+>>>>>>> 4e1c66ea7f58cad1ec8c8dabcd7726b4ef2ebb0e
   }
 }
