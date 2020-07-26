@@ -1,5 +1,26 @@
 [
   {
+    "title": "Calibrate",
+    "img": "static/img/logos/calibrate.svg",
+    "url": "https://joincalibrate.com",
+    "date": "June 2020",
+    "media": null
+  },
+  {
+    "title": "lola",
+    "img": "static/img/logos/lola.svg",
+    "url": "https://retail.mylola.com",
+    "date": "April 2020",
+    "media": null
+  },
+  {
+    "title": "citizen",
+    "img": "static/img/logos/citizen.svg",
+    "url": "https://citizen.com",
+    "date": "February 2020",
+    "media": null
+  },
+  {
     "title": "paypal",
     "img": "static/img/logos/ppdg.svg",
     "url": "https://paypal.com/gifts",

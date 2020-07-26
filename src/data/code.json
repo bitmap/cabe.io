@@ -5,6 +5,11 @@
     "url": "https://www.npmjs.com/package/react-hook-inview"
   },
   {
+    "title": "use-konami-code",
+    "desc": "Use the infamous Konami code with a React hook.",
+    "url": "https://www.npmjs.com/package/@bitmap/use-konami-code"
+  },
+  {
     "title": "styled-type",
     "desc": "Responsive typography system for styled-components",
     "url": "https://www.npmjs.com/package/styled-type"
@@ -28,11 +33,6 @@
     "title": "uno",
     "desc": "Gulp-based static site generator",
     "url": "https://github.com/bitmap/uno"
-  },
-  {
-    "title": "new-money",
-    "desc": "Micro-library for querying DOM and manipulating classNames / events",
-    "url": "https://www.npmjs.com/package/new-money"
   },
   {
     "title": "...more",

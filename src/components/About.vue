@@ -15,7 +15,7 @@
         <span>or <a @click="track" :href="about.phone">call me</a>.</span>
       </p>
       <h3>Stack</h3>
-      <p>JavaScript, TypeScript, Node, React, Next, Vue, Canvas, WebGL, Three.js, weird CSS, <router-link to="work">etc</router-link>.</p>
+      <p>JavaScript, TypeScript, Node, React, React Native, Next, Vue, Canvas, WebGL, Three.js, weird CSS, Python, <router-link to="work">whatever</router-link>.</p>
 
     </section>
   </div>

@@ -1,10 +1,10 @@
 <template>
-  <div class="container" @mousemove="follow">
+  <div class="container">
     <Doink />
     <section>
 
       <div class="chunk">
-        <h2 class="header">Web</h2>
+        <h2 class="header">Websites</h2>
         <ul class="sites">
           <li class="site" v-for="site in sites" :key="site.title">
             <a @click="track" :href="site.url" target="_blank">
@@ -15,7 +15,7 @@
         </div>
       <div class="chunk">
 
-      <h2 class="header">Etc</h2>
+      <h2 class="header">Projects</h2>
         <ul class="projects">
           <li class="project" v-for="project in projects" :key="project.title">
             <a @click="track" :href="project.url" target="_blank">
@@ -90,7 +90,6 @@ export default {
         })
       }
 
-
       this.tick += 1
     },
   },
@@ -114,7 +113,7 @@ h3 {
   font-size: 2rem;
   margin: 0;
   white-space: nowrap;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 
   @media screen and (max-width: 720px) {
     font-size: 1.5rem;
@@ -147,23 +146,8 @@ ul {
 }
 
 .header {
-  font-size: 6rem;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0;
-  position: absolute;
-  transform: rotate(90deg) translate(0%, 20%);
-  transform-origin: 0 0%;
-  top: 0;
-  left: 0;
-
-  @media screen and (max-width: 720px) {
-    font-size: 3rem;
-    -webkit-filter: none;
-    transform: rotate(90deg) translate(0%, -25%);
-    z-index: 100;
-    color: #52ffc4;
-  }
+  font-size: 3rem;
+  color: #52ffc4;
 }
 
 .sites {
@@ -175,17 +159,18 @@ ul {
   flex-flow: row wrap;
 
   .site {
-    flex-basis: (100% / 3);
-    height: 12rem;
+    cursor: pointer;
+    flex-basis: calc(100% / 3);
+    height: 150px;
     display: flex;
-    transition: 250ms;
+    transition: 250ms ease-out;
     padding: 0;
     position: relative;
     text-align: center;
-    transform: scale(0.9);
+    transform: scale(1);
 
     &:hover {
-      transform: scale(1.2) !important;
+      transform: scale(1.1) !important;
     }
   }
 
@@ -197,7 +182,7 @@ ul {
   }
 
   a {
-    margin: 0 auto;
+    margin: auto;
   }
 
   @media screen and (max-width: 720px) {
