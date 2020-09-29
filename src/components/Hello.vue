@@ -1,7 +1,8 @@
 <template>
-  <main @mousemove="follow">
+  <!-- <main @mousemove="follow"> -->
+  <main>
     <Nav />
-    <Doink />
+    <!-- <Doink /> -->
     <Warp />
     <section class="splash">
       <h1 class="splash_text">
@@ -15,13 +16,13 @@
 <script>
 import Nav from 'components/Nav.vue'
 import Warp from 'components/Warp.vue'
-import Doink from 'components/Doink.vue'
+// import Doink from 'components/Doink.vue'
 
 export default {
   components: {
     Nav, // eslint-disable-line
     Warp,
-    Doink,
+    // Doink,
   },
 
   data() { return { tick: 0 }},
