@@ -7,7 +7,7 @@
         <h2 class="header">Websites</h2>
         <ul class="sites">
           <li class="site" v-for="site in sites" :key="site.title">
-            <a @click="track" :href="site.url" target="_blank">
+            <a :href="site.url" target="_blank">
               <img :src="site.img" />
             </a>
           </li>
@@ -18,7 +18,7 @@
       <h2 class="header">Projects</h2>
         <ul class="projects">
           <li class="project" v-for="project in projects" :key="project.title">
-            <a @click="track" :href="project.url" target="_blank">
+            <a :href="project.url" target="_blank">
             <img :src="project.img" />
             <div>
             <h3>{{ project.title }}</h3>
@@ -33,7 +33,7 @@
         <h2 class="header">Code</h2>
         <ul class="codes">
           <li class="code" v-for="code in codes" :key="code.title">
-            <a @click="track" :href="code.url" target="_blank">
+            <a :href="code.url" target="_blank">
               <h3>{{ code.title }}</h3>
               <p>{{ code.desc }}</p>
             </a>
@@ -63,10 +63,6 @@ export default {
   methods: {
     transition(dir) {
       this.$root.transitionDir(dir)
-    },
-
-    track(event) {
-      this.$ga.event('Work Link', 'click', event.currentTarget.href)
     },
 
     follow(event) {

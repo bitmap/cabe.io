@@ -4,15 +4,15 @@
       <BackBtn url="/" transition-direction="up" position="top" />
       <h1>Cabe Branson is a Developer &amp; Designer based in New York.</h1>
       <p>
-        <span class="br">Currently <a :href="about.wnw" @click="track" target="_blank">working</a> @ <a href="https://somethingnew.co" @click="track" target="_blank">Something New</a>.</span>
-        Formerly @ <a href="https://cincodesign.com" @click="track" target="_blank">Cinco</a> &amp; <a href="https://b-reel.com" @click="track" target="_blank">B-Reel</a>.
+        <span class="br">Currently <a :href="about.wnw" target="_blank">working</a> @ <a href="https://somethingnew.co" target="_blank">Something New</a>.</span>
+        Formerly @ <a href="https://cincodesign.com" target="_blank">Cinco</a> &amp; <a href="https://b-reel.com" target="_blank">B-Reel</a>.
       </p>
       <p>
-        <span class="br">Check out my <a :href="about.resume" @click="track" target="_blank">resume</a>,</span>
-        <span>connect on <a :href="about.linkedIn" @click="track" target="_blank">linkedin</a>,</span>
-        <span class="br">see my code on <a :href="about.github" @click="track" target="_blank">github</a> &amp; <a :href="about.npm" @click="track" target="_blank">npm</a>,</span>
-        <span><a @click="track" :href="about.email">email me</a></span>
-        <span>or <a @click="track" :href="about.phone">call me</a>.</span>
+        <span class="br">Check out my <a :href="about.resume" target="_blank">resume</a>,</span>
+        <span>connect on <a :href="about.linkedIn" target="_blank">linkedin</a>,</span>
+        <span class="br">see my code on <a :href="about.github" target="_blank">github</a> &amp; <a :href="about.npm" target="_blank">npm</a>,</span>
+        <span><a :href="about.email">email me</a></span>
+        <span>or <a :href="about.phone">call me</a>.</span>
       </p>
       <h3>Stack</h3>
       <p>JavaScript, TypeScript, Node, React, React Native, Next, Vue, Canvas, WebGL, Three.js, weird CSS, Python, <router-link to="work">whatever</router-link>.</p>
@@ -33,11 +33,7 @@ export default {
   mounted() {
     this.$root.$data.transition = 'up'
   },
-  methods: {
-    track(event) {
-      this.$ga.event('About Link', 'click', event.currentTarget.href)
-    },
-  },
+  methods: {},
 }
 </script>
 
